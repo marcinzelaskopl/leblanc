@@ -1,0 +1,44 @@
+.bio {
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  height: 100vh;
+  background-color: #111318;
+  @media (min-width: 300px) and (max-width: 1000px) {
+    height: 200vh;
+  }
+    .avatar {
+      margin: 0 auto;
+      background-image: url("./images/leblanc-avatar.png");
+      background-size: cover;
+      background-position: center;
+      border: 3px solid #937341;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      margin-bottom: 5vh;
+      &:hover {
+        transition: 0.5s;
+        transform: scale(1.15);
+        cursor: pointer;
+      }
+    }
+}
+.quote {
+  text-align: center;
+  color: #c4b998;
+  font-size: 35px;
+  text-shadow: 2px 2px 2px rgba(black, 1);
+}
+
+.bio-short {
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
+  color: #c4b998;
+  text-shadow: 2px 2px 2px rgba(black, 1);
+}

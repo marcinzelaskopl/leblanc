@@ -1,0 +1,43 @@
+.front {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./images/Leblanc.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+    h1 {
+      text-shadow: 2px 2px 2px rgba(black, 1);
+      color: #937341;
+      letter-spacing: 4px;
+    }
+    h6 {
+      color: #c4b998;
+      letter-spacing: 4px;
+      text-shadow: 2px 2px 2px rgba(black, 1);
+    }
+}
+
+.btn-front {
+  font-weight: bold;
+  margin-top: 8vh;
+  font-size: 21px;
+  border: 3px solid #937341;
+  color: #c4b998;
+  background-color: transparent;
+  border-radius: 50%;
+  height: 125px;
+  width: 125px;
+  text-shadow: 2px 2px 2px rgba(black, 1);
+  &:hover {
+    transition: 0.75s;
+    border: 3px solid #c4b998;
+    color: #937341;
+    cursor: pointer;
+  }
+
+}
+

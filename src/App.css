@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'EB Garamond', serif; }
+
+.grid-container {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto; }
+  .grid-container .row::before, .grid-container .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .grid-container [class*='col-'] {
+    float: none;
+    width: 100%;
+    min-height: 1px;
+    padding: 12px; }
+    @media (min-width: 550px) {
+      .grid-container [class*='col-'] {
+        float: left; } }
+  @media (min-width: 550px) {
+    .grid-container .col-1 {
+      width: 8.33333%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-2 {
+      width: 16.66667%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-3 {
+      width: 25%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-4 {
+      width: 33.33333%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-5 {
+      width: 41.66667%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-6 {
+      width: 50%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-7 {
+      width: 58.33333%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-8 {
+      width: 66.66667%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-9 {
+      width: 75%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-10 {
+      width: 83.33333%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-11 {
+      width: 91.66667%; } }
+  @media (min-width: 550px) {
+    .grid-container .col-12 {
+      width: 100%; } }
+
+.front {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./images/Leblanc.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .front h1 {
+    text-shadow: 2px 2px 2px black;
+    color: #937341;
+    letter-spacing: 4px; }
+  .front h6 {
+    color: #c4b998;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 2px black; }
+
+.btn-front {
+  font-weight: bold;
+  margin-top: 8vh;
+  font-size: 21px;
+  border: 3px solid #937341;
+  color: #c4b998;
+  background-color: transparent;
+  border-radius: 50%;
+  height: 125px;
+  width: 125px;
+  text-shadow: 2px 2px 2px black; }
+  .btn-front:hover {
+    transition: 0.75s;
+    border: 3px solid #c4b998;
+    color: #937341;
+    cursor: pointer; }
+
+.bio {
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  height: 100vh;
+  background-color: #111318; }
+  @media (min-width: 300px) and (max-width: 1000px) {
+    .bio {
+      height: 200vh; } }
+  .bio .avatar {
+    margin: 0 auto;
+    background-image: url("./images/leblanc-avatar.png");
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #937341;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 5vh; }
+    .bio .avatar:hover {
+      transition: 0.5s;
+      transform: scale(1.15);
+      cursor: pointer; }
+
+.quote {
+  text-align: center;
+  color: #c4b998;
+  font-size: 35px;
+  text-shadow: 2px 2px 2px black; }
+
+.bio-short {
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
+  color: #c4b998;
+  text-shadow: 2px 2px 2px black; }
+
+/*# sourceMappingURL=App.css.map */
