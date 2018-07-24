@@ -8,7 +8,7 @@
   height: 100vh;
   background-color: #111318;
   @media (min-width: 300px) and (max-width: 1000px) {
-    height: 200vh;
+    height: 250vh;
   }
     .avatar {
       margin: 0 auto;
@@ -30,14 +30,14 @@
 .quote {
   text-align: center;
   color: #c4b998;
-  font-size: 35px;
+  font-size: 45px;
   text-shadow: 2px 2px 2px rgba(black, 1);
 }
 
 .bio-short {
   letter-spacing: 1px;
   margin-top: 10px;
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
   color: #c4b998;
   text-shadow: 2px 2px 2px rgba(black, 1);

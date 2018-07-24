@@ -3,6 +3,10 @@ import '../App.css';
 
 class Bio extends Component {
     render(){
+        function scroll() {
+            const el = document.getElementById('abs');
+            el.scrollIntoView({behavior: 'smooth'});
+        }
         return (
             <div id={'bio'} className={'grid-container bio'}>
                 <div className={'row'}>
@@ -15,6 +19,7 @@ class Bio extends Component {
                         <div className={'bio-short'}>
                             <p>Mysterious even to other members of the Black Rose cabal, LeBlanc is but one of many names for a pale woman who has manipulated people and events since the earliest days of Noxus. Using her magic to mirror herself, the sorceress can appear to anyone, anywhere, and even be in many places at once. Always plotting just out of sight, LeBlanc’s true motives are as inscrutable as her shifting identity.</p>
                         </div>
+                        <button onClick={scroll} className={'btn-front'}>Check Abilities</button>
                     </div>
                 </div>
             </div>

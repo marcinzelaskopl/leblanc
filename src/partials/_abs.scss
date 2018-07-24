@@ -1,0 +1,43 @@
+.abs {
+  font-size: 40px;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  color: #937341;
+  text-shadow: 2px 2px 2px rgba(black, 1);
+  height: 350vh;
+  background-color: #111318;
+    video {
+      border: 1px solid #937341;
+      width: 380px;
+      height: 260px;
+    }
+  }
+
+.abs-info {
+    img {
+      border: 1px solid #937341;
+    }
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+}
+
+.vid {
+  display: flex;
+  justify-content: center;
+}
+
+.mimic {
+  width: 4%;
+  height: 4%;
+}
+
+@media (min-width: 300px) and (max-width: 1000px) {
+  .abs {
+    height: 950vh;
+  }
+}
