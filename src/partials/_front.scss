@@ -10,6 +10,8 @@
   background-size: cover;
   background-repeat: no-repeat;
     h1 {
+      animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both;
+      @keyframes puff-in-center{0%{transform:scale(2);filter:blur(2px);opacity:0}100%{transform:scale(1);filter:blur(0);opacity:1}};
       text-shadow: 2px 2px 2px rgba(black, 1);
       color: #937341;
       letter-spacing: 4px;

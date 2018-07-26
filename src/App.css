@@ -69,9 +69,19 @@
   background-size: cover;
   background-repeat: no-repeat; }
   .front h1 {
+    animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
     text-shadow: 2px 2px 2px black;
     color: #937341;
     letter-spacing: 4px; }
+@keyframes puff-in-center {
+  0% {
+    transform: scale(2);
+    filter: blur(2px);
+    opacity: 0; }
+  100% {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1; } }
   .front h6 {
     color: #c4b998;
     letter-spacing: 4px;
