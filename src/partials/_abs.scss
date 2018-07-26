@@ -5,8 +5,11 @@
   justify-content: center;
   color: #937341;
   text-shadow: 2px 2px 2px rgba(black, 1);
-  height: 350vh;
+  height: 36s0vh;
   background-color: #111318;
+   h1 {
+     margin-bottom: 5vh;
+   }
     video {
       border: 1px solid #937341;
       width: 380px;
@@ -36,8 +39,40 @@
   height: 4%;
 }
 
-@media (min-width: 300px) and (max-width: 1000px) {
+@media (max-width: 420px) {
   .abs {
-    height: 950vh;
+    height: 830vh;
   }
+  .bio {
+    height: 280vh;
+  }
+}
+@media (max-width: 360px) and (min-height: 640px) {
+  .vid>video {
+    width: 90vw;
+  }
+  .abs {
+    height: 1050vh;
+  }
+}
+
+@media (min-width: 411px) and (min-height: 823px) {
+    .abs {
+      height: 730vh;
+    }
+}
+@media (min-width: 768px) and (min-height: 1024px) {
+  .abs {
+    height: 430vh;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .abs {
+    height: 300vh;
+  }
+}
+.btn-skin {
+  display: flex;
+  justify-content: center;
 }

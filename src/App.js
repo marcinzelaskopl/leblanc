@@ -3,6 +3,7 @@ import './App.scss';
 import Front from "./comps/Front";
 import Bio from "./comps/Bio";
 import Abs from "./comps/Abs";
+import Skins from "./comps/Skins";
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
             <Front/>
             <Bio/>
             <Abs/>
+            <Skins/>
         </div>
     )
   }

@@ -14,16 +14,20 @@ import VideoR from '../videos/r.webm'
 
 class Abs extends Component {
     render(){
+        function scroll() {
+            const el = document.getElementById('skins');
+            el.scrollIntoView({behavior: 'smooth'});
+        }
         return (
             <div className={'grid-container abs'}>
                 <div className={'row'}>
                     <div className={'col-12 abs-info'}>
                         <img src={ImgPassive} alt={'passive'}/>
-                        <h1 id={'abs'}>Mirror Image</h1>
+                        <h1>Mirror Image</h1>
                         <p>When LeBlanc drops below 40% health, she becomes invisible for 1 second and creates a Mirror Image that deals no damage and lasts for up to 8 seconds. Mirror Image has a 1 minute cooldown.</p>
                     </div>
                     <div className={'col-12 vid'}>
-                        <video controls={'controls'}>
+                        <video id={'abs'} controls={'controls'}>
                             <source src={VideoPassive}/>
                         </video>
                     </div>
@@ -66,6 +70,13 @@ class Abs extends Component {
                         <video controls={'controls'}>
                             <source src={VideoR}/>
                         </video>
+                    </div>
+                    <div className={'grid-container'}>
+                        <div className={'row'}>
+                            <div className={'col-12 btn-skin'}>
+                        <button className={'btn-front'} onClick={scroll}>Check skins!</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
